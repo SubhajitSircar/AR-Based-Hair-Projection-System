@@ -36,6 +36,7 @@ Transform:
   - {fileID: 4292171241814099026}
   - {fileID: 6854512325961037683}
   - {fileID: 621288893248145186}
+  - {fileID: 4854752380368971056}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1310812180876426657
@@ -304,6 +305,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6021930446308347457, guid: fc477b7f0424d7f47bdfaa27ed90bfc0, type: 3}
   m_PrefabInstance: {fileID: 3417814295875234888}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4959926558088397531
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1981101826184260052}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 084982a75cde84a4bbc02c481e8a5eed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.015515834
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 084982a75cde84a4bbc02c481e8a5eed, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5689875
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 084982a75cde84a4bbc02c481e8a5eed, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.074273676
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 084982a75cde84a4bbc02c481e8a5eed, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.06700579
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 084982a75cde84a4bbc02c481e8a5eed, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 084982a75cde84a4bbc02c481e8a5eed, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9977526
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 084982a75cde84a4bbc02c481e8a5eed, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 084982a75cde84a4bbc02c481e8a5eed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 084982a75cde84a4bbc02c481e8a5eed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -187.684
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 084982a75cde84a4bbc02c481e8a5eed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 084982a75cde84a4bbc02c481e8a5eed, type: 3}
+      propertyPath: m_Name
+      value: hair2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 084982a75cde84a4bbc02c481e8a5eed, type: 3}
+--- !u!4 &4854752380368971056 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 084982a75cde84a4bbc02c481e8a5eed, type: 3}
+  m_PrefabInstance: {fileID: 4959926558088397531}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6326414638346256749
 PrefabInstance:
@@ -689,6 +752,10 @@ PrefabInstance:
     - target: {fileID: 5341626468685465223, guid: 8aeafbad1559bb249a1e2248e8e19473, type: 3}
       propertyPath: m_Name
       value: Cool Pink And Blond Hair
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341626468685465223, guid: 8aeafbad1559bb249a1e2248e8e19473, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
