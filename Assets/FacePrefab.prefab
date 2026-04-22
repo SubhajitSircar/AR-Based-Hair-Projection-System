@@ -358,6 +358,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hair2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 084982a75cde84a4bbc02c481e8a5eed, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
