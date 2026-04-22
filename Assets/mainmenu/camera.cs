@@ -22,8 +22,7 @@ public class ScreenshotHandler : MonoBehaviour
     public string URL = "http://187.127.140.189:8000/api/hair_classify";
     public GameObject loadingScreen;
     public GameObject genderSelectScreen;
-    public TMP_Text t;
-    public TMP_Text t2;
+    public TMP_Text resultText;
 
     public GameObject retakeText;
     public GameObject continueText;
@@ -56,7 +55,7 @@ public class ScreenshotHandler : MonoBehaviour
             using (UnityWebRequest www = UnityWebRequest.Post(URL, form))
             {
                 yield return www.SendWebRequest();
-                t.gameObject.SetActive(true);
+                resultText.gameObject.SetActive(true);
                 loadingScreen.SetActive(false);
                 genderSelectScreen.SetActive(true);
 
@@ -66,7 +65,7 @@ public class ScreenshotHandler : MonoBehaviour
                 {
                     //loadingScreen.SetActive(false);
                     //genderSelectScreen.SetActive(true);
-                    t.text = www.error.ToString();
+                    resultText.text = www.error.ToString();
                 }
                 else
                 {
@@ -74,11 +73,30 @@ public class ScreenshotHandler : MonoBehaviour
                     genderSelectScreen.SetActive(true);
                     string json = www.downloadHandler.text;
                     UploadResponse response = JsonUtility.FromJson<UploadResponse>(json);
-                    t.text = response.hair_length;
+                    resultText.text = response.hair_length;
                 }
+
+                deleteLastScreenShot();
             }
         }
 
+    }
+
+    public void deleteLastScreenShot()
+    {
+        if (screenshotPath != null && screenshotPath != "")
+        {
+            if (File.Exists(screenshotPath))
+            {
+                File.Delete(screenshotPath);
+                Debug.Log("Deleted screenshot: " + screenshotPath);
+                screenshotPath = "";
+            }
+            else
+            {
+                Debug.LogWarning("Screenshot file not found for deletion: " + screenshotPath);
+            }
+        }
     }
 
 
